@@ -1,37 +1,78 @@
 <html>
-   <head>
-      <title>Sam French</title>
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <style>
-         body {
-         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-         max-width: 32rem;
-         margin: auto;
-         background-color: black;
-         color: white;
-         padding: 1rem;
+  <head>
+    <title>Sam French</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      * {
+         padding: 0;
+         margin: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        max-width: 32rem;
+        margin: auto;
+        background-color: black;
+        color: white;
+        padding: 3rem;
+        line-height: 1.5;
+      }
+      a {
+        color: lightblue;
+      }
+
+      h1 {
+         margin-bottom: .5rem;
+      }
+
+      .info {
+         margin-bottom: 2rem;
+      }
+
+      .sections {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .links {
+         display: flex;
+         gap: 0.5rem;
+      }
+
+      @media(max-width: 32rem) {
+         .sections {
+            display: flex; 
+            flex-direction: column;
+            justify-content: initial;
+            gap: 1rem;
          }
-         a {
-         color: lightblue;
-         }
-      </style>
-   </head>
-   <body>
-      <h1>Sam French</h1>
-      <p>Sam French is a jazz pianist in the Metrowest area of Massachusetts. He is available for gigs with experience playing in all settings.
-         <br />
-      <div style="display: flex; justify-content: space-between;">
-         <div style=" gap: .5rem;">
-            <h3 style="margin-bottom: .5rem;">Contact</h3>
-            <a href="sms:+15083301594">+1-508-330-1594</a>
-            <a href="https://twitter.com/samfrenchmusic">Email</a>
-         </div>
-         <div>
-            <h3 style="margin-bottom: .5rem;">Social</h3>
-            <a href="https://youtube.com/">YouTube</a>
-            <a href="https://twitter.com/samfrenchmusic">Twitter</a>
-            <a href="https://instagram.com/samfrenchjazz">Instagram</a>
-         </div>
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: .5rem">Sam French</h1>
+    <p class="info">
+      Sam French is a jazz pianist in the Metrowest area of Massachusetts. He is
+      available for gigs with experience playing in all settings.
+    </p>
+
+    <div class="sections">
+      <div>
+        <h3>Contact</h3>
+        <div class="links">
+          <a target="_blank" rel="noreferrer" href="sms:+15083301594">+1-508-330-1594</a>
+          <a target="_blank" rel="noreferrer" href="mailto:sam@samfrenchmusic.com">Email</a>
+        </div>
       </div>
-   </body>
+      <div>
+        <h3>Social</h3>
+        <div class="links">
+          <a target="_blank" rel="noreferrer" href="https://youtube.com/">YouTube</a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/samfrenchmusic">Twitter</a>
+          <a target="_blank" rel="noreferrer" href="https://instagram.com/samfrenchjazz">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
